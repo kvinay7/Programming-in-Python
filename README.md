@@ -13,7 +13,8 @@ Python is a high-level, interpreted programming language known for its simplicit
 
 <details>
   <summary><h2>Functions in Python</h2></summary>
-A **function** is a reusable block of code that performs a specific task. Python provides **built-in functions** (e.g., `print()`, `len()`, `sum()`) and allows users to create **custom functions**.
+
+  A **function** is a reusable block of code that performs a specific task. Python provides **built-in functions** (e.g., `print()`, `len()`, `sum()`) and allows users to create **custom functions**.
 
 ### **1️⃣ Defining and Calling Functions**  
 #### **🔹 Basic Function**
