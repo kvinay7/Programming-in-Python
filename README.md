@@ -11,7 +11,8 @@ Python is a high-level, interpreted programming language known for its simplicit
 - Python variables don’t need type declarations. Has mutable (list, dict, set) & immutable (numeric, tuple, string) types.
 ---
 
-## 🔹 **Functions in Python**  
+<details>
+  <summary><h2>🔹 Functions in Python</h2></summary>
 A **function** is a reusable block of code that performs a specific task. Python provides **built-in functions** (e.g., `print()`, `len()`, `sum()`) and allows users to create **custom functions**.
 
 ### **1️⃣ Defining and Calling Functions**  
@@ -204,8 +205,10 @@ say_hello()
 ✅ `@decorator` is **syntactic sugar** for `say_hello = decorator(say_hello)`.  
 
 ---
+</details>
 
-## **🔹 Exception Handling in Python**
+<details>
+  <summary><h2>🔹 Exception Handling in Python</h2></summary>
 
 ### **1️⃣ What is Exception Handling?**
 Exception handling in Python allows us to **gracefully handle errors** instead of abruptly stopping the program. This is done using `try-except` blocks.
@@ -279,6 +282,8 @@ finally:
 ✅ The `finally` block **always executes** (even if an exception occurs).  
 ✅ Used for **cleanup operations** like closing files.
 
+---
+
 ### **7️⃣ Raising Custom Exceptions (`raise`)**
 ```python
 def check_age(age):
@@ -293,6 +298,8 @@ except ValueError as e:
 ```
 ✅ **`raise`** is used to **manually trigger an exception**.
 
+---
+
 ### **8️⃣ Creating Custom Exceptions**
 ```python
 class MyException(Exception):
@@ -306,3 +313,4 @@ except MyException as e:
 ✅ You can **define your own exception classes** by inheriting from `Exception`.
 
 ---
+</details>
