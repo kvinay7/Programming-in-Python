@@ -12,7 +12,7 @@ Python is a high-level, interpreted programming language known for its simplicit
 ---
 
 <details>
-  <summary><h2>🔹 Functions in Python</h2></summary>
+  <summary><h2>Functions in Python</h2></summary>
 A **function** is a reusable block of code that performs a specific task. Python provides **built-in functions** (e.g., `print()`, `len()`, `sum()`) and allows users to create **custom functions**.
 
 ### **1️⃣ Defining and Calling Functions**  
@@ -208,7 +208,7 @@ say_hello()
 </details>
 
 <details>
-  <summary><h2>🔹 Exception Handling in Python</h2></summary>
+  <summary><h2>Exception Handling in Python</h2></summary>
 
 ### **1️⃣ What is Exception Handling?**
 Exception handling in Python allows us to **gracefully handle errors** instead of abruptly stopping the program. This is done using `try-except` blocks.
