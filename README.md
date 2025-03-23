@@ -9,6 +9,7 @@ Python is a high-level, interpreted programming language known for its simplicit
 | Portability | Runs on any OS with Python installed | Runs on any OS with JVM installed | Needs recompilation for different OS |
 | Speed | Slower (interpreted at runtime) | Faster than Python | Fastest (direct machine code execution) |
 - Python variables don’t need type declarations. Has mutable (list, dict, set) & immutable (numeric, tuple, string) types.
+---
 
 ## 🔹 **Functions in Python**  
 A **function** is a reusable block of code that performs a specific task. Python provides **built-in functions** (e.g., `print()`, `len()`, `sum()`) and allows users to create **custom functions**.
