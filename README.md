@@ -205,3 +205,104 @@ say_hello()
 
 ---
 
+## **🔹 Exception Handling in Python**
+
+### **1️⃣ What is Exception Handling?**
+Exception handling in Python allows us to **gracefully handle errors** instead of abruptly stopping the program. This is done using `try-except` blocks.
+
+### **2️⃣ Basic `try-except` Example**
+```python
+try:
+    x = 5 / 0  # Division by zero
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+```
+✅ **`try` block** contains the code that may raise an exception.  
+✅ **`except` block** handles the error gracefully.  
+
+**🔹 Output:**  
+```
+Cannot divide by zero!
+```
+
+---
+
+### **3️⃣ Handling Multiple Exceptions**
+```python
+try:
+    num = int(input("Enter a number: "))
+    result = 10 / num
+except ZeroDivisionError:
+    print("You cannot divide by zero!")
+except ValueError:
+    print("Invalid input! Please enter a number.")
+```
+✅ Multiple `except` blocks can handle **different types of exceptions**.
+
+---
+
+### **4️⃣ Catching Multiple Exceptions in One Block**
+```python
+try:
+    x = int("abc")  # Causes ValueError
+except (ValueError, TypeError) as e:
+    print(f"An error occurred: {e}")
+```
+✅ Use a tuple `(Error1, Error2)` to catch **multiple exceptions in one block**.
+
+---
+
+### **5️⃣ Using `else` Block (Runs if No Exception Occurs)**
+```python
+try:
+    num = int(input("Enter a number: "))
+    result = 10 / num
+except ZeroDivisionError:
+    print("You cannot divide by zero!")
+else:
+    print(f"Result: {result}")  # Runs if no error occurs
+```
+✅ The `else` block **executes only if no exception occurs**.
+
+---
+
+### **6️⃣ Using `finally` Block (Always Executes)**
+```python
+try:
+    file = open("test.txt", "r")
+    content = file.read()
+except FileNotFoundError:
+    print("File not found!")
+finally:
+    print("Execution completed!")  # Always runs
+```
+✅ The `finally` block **always executes** (even if an exception occurs).  
+✅ Used for **cleanup operations** like closing files.
+
+### **7️⃣ Raising Custom Exceptions (`raise`)**
+```python
+def check_age(age):
+    if age < 18:
+        raise ValueError("Age must be 18 or above")
+    print("You are eligible.")
+
+try:
+    check_age(16)
+except ValueError as e:
+    print(e)
+```
+✅ **`raise`** is used to **manually trigger an exception**.
+
+### **8️⃣ Creating Custom Exceptions**
+```python
+class MyException(Exception):
+    pass  # Custom exception class
+
+try:
+    raise MyException("Something went wrong!")
+except MyException as e:
+    print(e)
+```
+✅ You can **define your own exception classes** by inheriting from `Exception`.
+
+---
