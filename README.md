@@ -317,7 +317,7 @@ except MyException as e:
 </details>
 
 <details>
-  <summary><h1>Object-Oriented Programming (OOP) in Python</h1></summary>
+  <summary><h2>Object-Oriented Programming (OOP) in Python</h2></summary>
 
 **Object-Oriented Programming (OOP)** is a programming paradigm that models real-world entities using **classes** and **objects**. Python supports OOP with key principles like **Encapsulation, Inheritance, Polymorphism, and Abstraction**.
 
